@@ -4,7 +4,7 @@
 
 ## 0. 先弄清楚你是哪类用户
 
-如果你只是想每天自动刷新 Excel 文件，你是“普通使用者”。你只需要下载并运行 `ExcelAutoRefresh.exe`。
+如果你只是想每天自动刷新 Excel 数据透视表，你是“普通使用者”。你只需要下载并运行 `ExcelAutoRefresh.exe`。
 
 如果你想让 Codex 以后也能理解和维护这个工具，你是“Codex / Skill 配置者”。你需要下载整个 GitHub 项目，并把它放到 Codex 的 skills 目录。
 
@@ -49,7 +49,7 @@ D:\Tools\ExcelAutoRefresh\ExcelAutoRefresh.exe
 
 1. 点击 `Add task / 添加任务`。
 2. 点击 `Browse / 浏览`。
-3. 选择你要自动刷新的 Excel 文件。
+3. 选择你要自动刷新数据透视表的 Excel 文件。
 4. 在时间框里输入每天刷新时间，例如：
 
 ```text
@@ -68,7 +68,7 @@ D:\Tools\ExcelAutoRefresh\ExcelAutoRefresh.exe
 1. 在主界面选中刚添加的任务。
 2. 点击 `Run now / 立即运行`。
 3. 等待刷新完成。
-4. 如果看到成功提示，说明这个 Excel 文件可以被自动刷新。
+4. 如果看到成功提示，说明这个 Excel 文件里的数据透视表可以被自动刷新。
 
 如果失败，点击 `Logs / 日志` 查看错误信息。常见原因包括：
 
@@ -199,7 +199,7 @@ E:\.codex\skills\excel-pivot-auto-refresh\scripts\excel_auto_refresh_app.py
 之后你可以在 Codex 里这样说：
 
 ```text
-使用 $excel-pivot-auto-refresh 帮我维护 Excel 自动刷新工具
+使用 $excel-pivot-auto-refresh 帮我维护 Excel 数据透视表自动刷新工具
 ```
 
 或：

@@ -1,8 +1,8 @@
-# Excel Auto Refresh / Excel 自动刷新
+# Excel Auto Refresh / Excel 数据透视表自动刷新
 
-A local Windows desktop app for scheduling automatic Excel refresh tasks. It is designed for non-technical users who need to refresh workbooks, Power Query connections, external data, and pivot tables without writing VBA or scripts.
+A local Windows desktop app for scheduling automatic Excel pivot table refresh tasks. It is designed for non-technical users who need to refresh workbooks, Power Query connections, external data, and pivot tables without writing VBA or scripts.
 
-这是一个 Windows 本地桌面应用，用于定时自动刷新 Excel。它面向非技术用户，适合在不编写 VBA 或脚本的情况下刷新工作簿、Power Query、外部数据连接和数据透视表。
+这是一个 Windows 本地桌面应用，用于定时自动刷新 Excel 数据透视表。它面向非技术用户，适合在不编写 VBA 或脚本的情况下刷新工作簿、Power Query、外部数据连接和数据透视表。
 
 ## Beginner Guide / 新手教程
 

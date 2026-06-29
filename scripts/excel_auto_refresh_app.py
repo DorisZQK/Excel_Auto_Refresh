@@ -125,7 +125,7 @@ def register_scheduled_task(task: dict) -> tuple[bool, str]:
 $Action = New-ScheduledTaskAction -Execute 'cmd.exe' -Argument '/c {command}'
 $Trigger = New-ScheduledTaskTrigger -Daily -At {quote_ps(time_text)}
 $Settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
-Register-ScheduledTask -TaskName {quote_ps(name)} -Action $Action -Trigger $Trigger -Settings $Settings -Description 'Refresh an Excel workbook locally with Excel Auto Refresh.' -Force | Out-Null
+Register-ScheduledTask -TaskName {quote_ps(name)} -Action $Action -Trigger $Trigger -Settings $Settings -Description 'Refresh Excel workbook data connections and pivot tables locally with Excel Auto Refresh.' -Force | Out-Null
 """
     result = run_powershell(ps)
     if result.returncode != 0:
@@ -317,7 +317,7 @@ class TaskDialog:
 class App:
     def __init__(self) -> None:
         self.root = Tk()
-        self.root.title(text("Excel Auto Refresh", "Excel 自动刷新"))
+        self.root.title(text("Excel Auto Refresh", "Excel 数据透视表自动刷新"))
         self.root.geometry("1240x760")
         self.root.minsize(1080, 660)
         self.config = load_config()
@@ -337,7 +337,7 @@ class App:
         Label(brand, text="▣", bg="#fbfcfd", fg="#138a55", font=("Segoe UI Symbol", 17, "bold")).pack(side="left")
         Label(
             brand,
-            text=text("Excel Auto Refresh", "Excel 自动刷新"),
+            text=text("Excel Auto Refresh", "Excel 数据透视表自动刷新"),
             bg="#fbfcfd",
             fg="#162033",
             font=("Segoe UI", 12, "bold"),
@@ -383,10 +383,10 @@ class App:
 
         title_block = Frame(hero, bg="#ffffff")
         title_block.pack(side="left", fill="x", expand=True)
-        Label(title_block, text=text("Excel Auto Refresh", "Excel 自动刷新"), bg="#ffffff", fg="#101828", font=("Segoe UI", 24, "bold")).pack(anchor="w")
+        Label(title_block, text=text("Excel Auto Refresh", "Excel 数据透视表自动刷新"), bg="#ffffff", fg="#101828", font=("Segoe UI", 24, "bold")).pack(anchor="w")
         Label(
             title_block,
-            text="无需脚本或上传文件，即可在本机定时刷新 Excel",
+            text="无需脚本或上传文件，即可在本机定时刷新 Excel 数据透视表",
             bg="#ffffff",
             fg="#667085",
             font=("Segoe UI", 11),
@@ -540,7 +540,7 @@ class App:
     def show_about(self) -> None:
         messagebox.showinfo(
             "关于 / About",
-            "Excel Auto Refresh v1.0.0\n\n本地 Excel 自动刷新工具。\nFiles stay on this computer.",
+            "Excel Auto Refresh v1.0.0\n\n本地 Excel 数据透视表自动刷新工具。\nFiles stay on this computer.",
         )
 
     def reload(self) -> None:
