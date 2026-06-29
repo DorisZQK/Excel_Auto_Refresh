@@ -25,7 +25,7 @@
 推荐方式是从 GitHub Releases 下载。
 
 1. 打开项目页面：  
-   https://github.com/ZephyrZQK/Excel_Auto_Refresh
+   https://github.com/DorisZQK/Excel_Auto_Refresh
 2. 找到右侧或页面中的 `Releases`。
 3. 点击最新版本，例如 `v1.0.0`。
 4. 下载 `ExcelAutoRefresh.exe`。
@@ -138,7 +138,7 @@ D:\Tools\ExcelAutoRefresh\ExcelAutoRefresh.exe
 ### 3.1 下载 GitHub 项目
 
 1. 打开项目页面：  
-   https://github.com/ZephyrZQK/Excel_Auto_Refresh
+   https://github.com/DorisZQK/Excel_Auto_Refresh
 2. 点击绿色的 `Code` 按钮。
 3. 点击 `Download ZIP`。
 4. 下载完成后解压。
@@ -217,7 +217,7 @@ Use $excel-pivot-auto-refresh to update the Excel auto refresh app.
 打开项目页面：
 
 ```text
-https://github.com/ZephyrZQK/Excel_Auto_Refresh
+https://github.com/DorisZQK/Excel_Auto_Refresh
 ```
 
 点击：
@@ -269,7 +269,7 @@ scripts\dist\ExcelAutoRefresh.exe
 给技术同事或维护者，可以发 GitHub 项目链接：
 
 ```text
-https://github.com/ZephyrZQK/Excel_Auto_Refresh
+https://github.com/DorisZQK/Excel_Auto_Refresh
 ```
 
 ## 6. 安全提醒
